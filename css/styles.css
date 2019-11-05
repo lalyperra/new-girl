@@ -64,15 +64,6 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 	display: none;
 }
 
-/* button {
-	width: 100%;
-height: 140px;
-margin: 10px;
-overflow: hidden;
-object-fit: cover;
-object-position: center;
-} */
-
 /* ******* START ACCORDION CODE **** */
 .accordion {
   color: #444;
