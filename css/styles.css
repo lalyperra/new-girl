@@ -1,3 +1,19 @@
+@charset "UTF-8";
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*:focus {
+	outline: 0;
+}
+
 /* fonts
 font-family: 'Oswald', sans-serif; (used for all headers and navigation)
 font-family: Helvetica, sans-serif; (used for all body text)
@@ -7,16 +23,6 @@ font-family: Helvetica, sans-serif; (used for all body text)
 #0F68D0 - blue
 #F7F7F7 - light gray background
  */
-
-* {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
-}
 
 /* ******* START HAMBURGER MENU **** */
 .hamburger{
@@ -119,3 +125,8 @@ article, aside, details, figcaption, figure, footer, header, main, nav, section,
 }
 
 /* ******* END ACCORDION CODE **** */
+
+/* ******* Start flexbox for columns **** */
+.panel ul {
+ columns: 3;
+ }
