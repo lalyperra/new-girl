@@ -1,0 +1,326 @@
+@charset "UTF-8";
+
+article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
+    display:block;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*:focus {
+	outline: 0;
+}
+
+/* fonts
+font-family: 'Oswald', sans-serif; (used for all headers and navigation)
+font-family: Helvetica, sans-serif; (used for all body text)
+*/
+
+/* colors:
+#F7F7F7 - light gray background
+#edba31 or #e7bb1f - New Girl Yellow
+#006ee6 or #0F68D0- New Girl blue
+ */
+
+/* ******* START HAMBURGER MENU **** */
+.hamburger{
+  background:none;
+  position:absolute;
+  top:0;
+  right:0;
+  line-height:45px;
+  padding:5px 15px 0px 15px;
+  color: blue;
+  border:0;
+  font-size:1.4em;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+.cross{
+  background:none;
+  position:absolute;
+  top:0px;
+  right:0;
+  padding:7px 15px 0px 15px;
+  color: blue;
+  border:0;
+  font-size:3em;
+  line-height:65px;
+  font-weight:bold;
+  cursor:pointer;
+  outline:none;
+  z-index:10000000000000;
+}
+
+.menu {z-index:1000000; font-weight:bold; font-size:0.8em; width:100%; background:#f1f1f1;  position:absolute; text-align:center; font-size:12px;}
+.menu ul {margin: 0; padding: 0; list-style-type: none; list-style-image: none;}
+.menu li {display: block;   padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu li:hover {display: block;    background:#ffffff; padding:15px 0 15px 0; border-bottom:#dddddd 1px solid;}
+.menu ul li a { text-decoration:none;  margin: 0px; color:#666;}
+.menu ul li a:hover {  color: #666; text-decoration:none;}
+.menu a {text-decoration:none; color:#666;}
+.menu a:hover{text-decoration:none; color:#666;}
+/* ******* END HAMBURGER MENU **** */
+
+/* ******* START ACCORDION CODE **** */
+.accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 75%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+	text-align: center;
+}
+
+.s1 .accordion {
+	background-image: url("../images/seasons/season1.jpg");
+}
+
+.s2 .accordion {
+	background-image: url("../images/seasons/season2.jpg");
+}
+
+.s3 .accordion {
+	background-image: url("../images/seasons/season3.jpg");
+}
+
+.s4 .accordion {
+	background-image: url("../images/seasons/season4.jpg");
+}
+
+.s5 .accordion {
+	background-image: url("../images/seasons/season5.jpg");
+}
+
+.s6 .accordion {
+	background-image: url("../images/seasons/season6.jpg");
+}
+
+.s7 .accordion {
+	background-image: url("../images/seasons/season7.jpg");
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+/* ******* END ACCORDION CODE **** */
+
+/**HEADER/NAV STUFF**/
+.menu {
+  display: none;
+}
+
+button {
+  display: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.desktop-menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  width: 400px;
+}
+
+.desktop-menu li {
+  display: block;
+  width: 100px;
+  float: right;
+  padding: 10px;
+}
+
+header ul {
+  font-size: 1.55em;
+  font-family: 'Oswald', sans-serif;
+  color: #0F68D0;
+}
+
+/**OVERALL BODY**/
+body {
+	font-family: Helvetica, sans-serif;
+  color: #0F68D0;
+  padding: 2px;
+}
+
+.container {
+	display: flex;
+	max-width: 85%;
+	margin: auto;
+	text-align: center;
+	background-image: url("images/background.png");
+}
+
+
+/**FORMATTING FOR THE SECTIONS**/
+main {
+	display: flex;
+	flex-wrap: wrap;
+  padding: 2%;
+}
+
+h1 {
+	font-size: 5em;
+	text-decoration: none;
+}
+
+h2 {
+	font-size: 3em;
+	text-transform: uppercase;
+}
+
+h3 {
+  font-size: 2em;
+  text-transform: uppercase;
+}
+
+p {
+  padding: 1%;
+}
+
+a {
+	text-decoration: none;
+}
+
+.small-header-logo a:hover {
+	color: #ccc;
+	background-color: #0F68D0
+}
+
+h2, h3, h4, h5, {
+	font-family: 'Oswald', sans-serif;
+  color: #0F68D0;
+}
+
+
+/**IMAGE STUFF**/
+
+img {
+	max-width: 75%;
+	height: auto;
+	text-align: center;
+	padding: 1%;
+}
+
+.NewGirl img {
+  width: 50%;
+  height: auto;
+  float: right;
+}
+
+/**FORMATTING FOR EPISODES**/
+.panel ul {
+ columns: 3;
+ }
+
+.season-image-container {
+ 	width: 100%;
+ 	display: flex;
+ 	justify-content: center;
+ 	flex-wrap: wrap;
+}
+
+/**FORMATTING FOR CHARACTERS**/
+.character-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.c1, .c2, .c3, .c4, .c5  {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/**FOOTER FORMATTING**/
+footer {
+	background-color: #0F68D0;
+	display: flex;
+	justify-content: space-between;
+}
+
+h5 {
+	color: white;
+	text-transform: uppercase;
+	padding-top: 3%;
+}
+
+footer img {
+	width: 10%;
+	height: auto;
+	padding: 1%;
+}
+
+ /**MEDIA QUERIES HERE**/
+ @media (max-width: 700px) {
+	 .desktop-menu {
+		 display: none;
+	 }
+
+   .menu {
+     display: inline;
+   }
+
+   button {
+     display: inline;
+   }
+
+	 h1 {
+	 	font-size: 6em;
+	 	text-decoration: none;
+	 	text-align: center;
+	 }
+
+	 h2 {
+	 	font-size: 2em;
+	 }
+
+   h3 {
+     font-size: 1.5em;
+   }
+
+	 h5 {
+		 font-size: .5em;
+	 }
+
+   p {
+     font-size: .75em;
+   }
+
+
+/**MAKES THEM STACK WITH IMAGE ON TOP THEN SUMMARY**/
+   .character-container {
+     display: flex;
+     flex-wrap: wrap;
+   }
+
+   .c1, .c2, .c3, .c4, .c5  {
+     display: block;
+   }
+
+	 footer {
+		 display: flex;
+		 flex-grow: 0;
+	 }
+ }

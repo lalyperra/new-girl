@@ -21,22 +21,32 @@
 	</head>
 
 	<body>
-		<div class="home-background-image">
-			<!-- Container for background image to be added in CSS -->
-		</div>
-		<header>
-			<h1 class="small-header-logo"><a href="index.html">New Girl</a></h1>
-			<nav>
+
+		<div="container">
+			<header class="header-background-image">
+				<h1 class="small-header-logo"><a href="index.html">New Girl</a></h1>
+				<button class="hamburger">&#9776;</button>
+				<button class="cross">&#735;</button>
+				<nav class="menu">
+					<ul>
+						<li><a href="episodes.html" alt="New Girl Episode Guide" title="New Girl Episode Guide">Episodes</a></li>
+						<li><a href="characters.html">Characters</a></li>
+					</ul>
+				</nav>
+
+			<!-- This nav can be turned on at larger screen widths instead of using the hamburger menu -->
+			<nav class="desktop-menu">
 				<ul>
-					<li><a href="index.html">Home</a></li>
-					<li><a href="episodes.html">Episodes</a></li>
+					<li><a href="episodes.html" alt="New Girl Episode Guide" title="New Girl Episode Guide">Episodes</a></li>
 					<li><a href="characters.html">Characters</a></li>
 				</ul>
 			</nav>
 		</header>
 
 			<main>
-				<img src="images/home-characters.png" alt="New Girl Cast Photo" title="New Girl Cast Photo">
+				<div class="NewGirl">
+					<img src="images/home-characters.png" alt="New Girl Cast Photo" title="New Girl Cast Photo">
+				</div>
 			</main>
 
 			<footer>
@@ -46,6 +56,7 @@
 
 
 		<script src="js/hamburger.js"></script>
+	</div>
 	</body>
 
 </html>
